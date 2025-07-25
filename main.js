@@ -6,7 +6,7 @@
 
       const formData = new FormData(form);
 
-   fetch('http://127.0.0.1:5000/submit-form', {
+   fetch('https://bangbros-backend.onrender.com/submit-form', {
         method: 'POST',
         body: formData
       })
