@@ -114,45 +114,57 @@ textarea:focus {
 }
 
 .payment-options {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .payment-option {
-  background: #29293d;
-  padding: 1rem;
-  border-radius: 12px;
-  text-align: center;
-  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  width: 25%;
+  height: 100px;
   cursor: pointer;
-  border: 2px solid transparent;
 }
 
-.payment-option:hover {
-  border-color: #ff8a00;
-  transform: scale(1.05);
+.payment-options:hover{
+  transform: scaleX(10px);
 }
 
-.payment-option input {
-  display: block;
+@media screen and (max-width: 500px) {
+  .payment-options {
+    display: flex;
+  }
+  .payment-option{
+    width: 24.7%;
+  }
 }
 
-.payment-option input:hover {
-  display: none;
+.payment-option img {
+  width: 70%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 10px;
 }
 
 .payment-icon {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 0.5rem;
-  filter: brightness(0) invert(1);
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
 }
 
 .payment-label {
-  color: #fff;
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: bold;
 }
 
 .submit-btn {
@@ -226,7 +238,7 @@ textarea:focus {
   #modalContent {
     max-width: 100%;
     margin: 0;
-    margin-top: 40%;
+    margin-top: 35%;
   }
 }
 
