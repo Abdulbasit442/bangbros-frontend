@@ -2,9 +2,5 @@
 document.getElementById("infoForm").addEventListener("submit", function (e) {
   e.preventDefault();
   
-  document.getElementById("modalBox").style.display = "flex";
+  alert("Your free form submit has expired!  Please upgrade your plan to continue using form submit")
 })
-
-document.getElementById("closeModal").addEventListener("click", function () {
-  document.getElementById("modalBox").style.display = "none";
-});
