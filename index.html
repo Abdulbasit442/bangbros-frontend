@@ -16,7 +16,7 @@
     </div>
     <div class="form-container">
       <h1 style="color: blue;">Bangbros Registration program</h1>
-      <form>
+      <form id="infoForm">
         <!-- Hidden config -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="box">
@@ -194,7 +194,11 @@
       </form>
     </div>
   </div>
-  <script src="main.js"></script>
+  <script src="main.js">
+  document.getElementById("infoForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+})
+  </script>
 </body>
 
 </html>
