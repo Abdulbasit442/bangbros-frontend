@@ -1,4 +1,4 @@
 
-document.getElementById("infoForm_£=").addEventListener("submit", function (e) {
+document.getElementById("infoForm).addEventListener("submit", function (e) {
   e.preventDefault();
 })
