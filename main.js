@@ -1,5 +1,5 @@
-
-  document.getElementById("infoform").addEventListener("submit", (e)=> {
+const form = document.getElementById("infoform")
+    form.addEventListener("submit", (e)=> {
     e.preventDefault()
     // alert("account was created successfully");
     if(confirm("form submitted successfully! click ok to continue")) {
